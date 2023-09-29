@@ -14,7 +14,7 @@ namespace LogicalPrograms
             while (interested)
             {
                 Console.WriteLine("Enter Choice :\n   1   -->   Fibonacci Series.\n   2   -->   Perfect Number.\n" +
-                    "   3   -->   Prime Number.\n   0   -->   QUIT.");
+                    "   3   -->   Prime Number.\n   4   -->   Reverse Number.\n   0   -->   QUIT.");
                 int choice = int.Parse(Console.ReadLine());
                 switch (choice)
                 {
@@ -31,6 +31,11 @@ namespace LogicalPrograms
                     case 3:
                         PrimeNumber primeNumber = new PrimeNumber();
                         primeNumber.IsPrime();
+                        Console.ReadLine();
+                        break;
+                    case 4:
+                        ReverseNumber reverseNumber = new ReverseNumber();
+                        reverseNumber.Reverse();
                         Console.ReadLine();
                         break;
                     case 0:
