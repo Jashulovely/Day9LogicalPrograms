@@ -13,13 +13,18 @@ namespace LogicalPrograms
             bool interested = true;
             while (interested)
             {
-                Console.WriteLine("Enter Choice :\n   1   -->   Fibonacci Series.\n   0   -->   QUIT.");
+                Console.WriteLine("Enter Choice :\n   1   -->   Fibonacci Series.\n   2   -->   Perfect Number.\n   0   -->   QUIT.");
                 int choice = int.Parse(Console.ReadLine());
                 switch (choice)
                 {
                     case 1:
                         FibonacciSeries series = new FibonacciSeries();
                         series.GetSeries();
+                        Console.ReadLine();
+                        break;
+                    case 2:
+                        PerfectNumber perfectNumber = new PerfectNumber();
+                        perfectNumber.IsPerfectNumber();
                         Console.ReadLine();
                         break;
                     case 0:
